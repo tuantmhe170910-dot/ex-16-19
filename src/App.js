@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import EventHandlingDemo from "./Exercise/ex16";
+import RenderAndCommitDemo from "./Exercise/ex17";
+import SnapshotDemo from "./Exercise/ex18";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Exercise 16 */}
+      <div>
+        <EventHandlingDemo />
+      </div>
+
+      <React.StrictMode>
+        {/* Exercise 17 */}
+        <RenderAndCommitDemo />
+
+        {/* Exercise 18 */}
+        <SnapshotDemo />
+      </React.StrictMode>
+    </>
   );
 }
 
